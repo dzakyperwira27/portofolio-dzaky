@@ -1201,3 +1201,63 @@ section {
         font-size: 3rem;
     }
 }
+
+/* ========================= */
+/* 📱 RESPONSIVE DESIGN AREA */
+/* ========================= */
+
+/* Untuk layar tablet dan HP besar */
+@media (max-width: 1024px) {
+    .nav-menu {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .hero-image img {
+        width: 80%;
+    }
+}
+
+/* Untuk layar HP kecil */
+@media (max-width: 600px) {
+    .hero-title {
+        font-size: 1.8rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about .container,
+    .contact .container {
+        padding: 0 15px;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* Agar semua gambar tidak meluap dari layar */
+img {
+    max-width: 100%;
+    height: auto;
+}
