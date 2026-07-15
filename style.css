@@ -487,14 +487,6 @@ body {
   font-size: 1.1rem;
 }
 
-/* Responsive HP */
-@media (max-width: 768px) {
-  .hero-social {
-    justify-content: center;
-    align-items: center;
-  }
-}
-
 .hero-social a:hover {
   background: var(--primary-color);
   transform: translateY(-5px) scale(1.05);
